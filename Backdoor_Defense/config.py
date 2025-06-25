@@ -4,14 +4,14 @@ def get_arguments():
     parser = argparse.ArgumentParser(description="ABL Defense Configuration")
 
     # Paths
-    parser.add_argument('--isolation_model_root', type=str, default='/content/drive/MyDrive/ABL/weight/ABL_results',
+    parser.add_argument('--isolation_model_root', type=str, default='/content/AI_based_attacks_on_AVs/Backdoor_Defense/weight/ABL_results',
                         help='Path to save isolated models')
-    parser.add_argument('--unlearning_root', type=str, default='/content/drive/MyDrive/ABL/weight/ABL_results/WRN-16-1-unlearning_epoch5.tar',
+    parser.add_argument('--unlearning_root', type=str, default='/content/AI_based_attacks_on_AVs/Backdoor_Defense/weight/ABL_results/WRN-16-1-unlearning_epoch5.tar',
                         help='Path to save unlearned models')
-    parser.add_argument('--log_root', type=str, default='/content/drive/MyDrive/ABL/logs', help='Path for logging results')
+    parser.add_argument('--log_root', type=str, default='/content/AI_based_attacks_on_AVs/Backdoor_Defense/logs', help='Path for logging results')
     parser.add_argument('--dataset', type=str, default='CIFAR10', choices=['CIFAR10', 'GTSRB', 'ImageNet'])
     parser.add_argument('--model_name', type=str, default='WRN-16-1', help='Model architecture')
-    parser.add_argument('--isolate_data_root', type=str, default='/content/drive/MyDrive/ABL/isolation_data/',
+    parser.add_argument('--isolate_data_root', type=str, default='/content/AI_based_attacks_on_AVs/Backdoor_Defense/isolation_data/',
                         help='Path to store isolated samples')
 
     # Training Hyperparameters
